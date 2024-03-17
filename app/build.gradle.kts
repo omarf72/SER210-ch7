@@ -1,6 +1,9 @@
 plugins {
+    //id("androidx.navigation.safeargs.kotlin")
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("androidx.navigation.safeargs.kotlin".toString())
+
 }
 
 android {
@@ -37,7 +40,9 @@ android {
 
 dependencies {
 
+    //classpath ("androidx.navigation:navigation-safe-args-gradle-plug-in:$nav_version")
     //implementation("androidx.navigation:navigation-fragment-ktx$nav_version")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
